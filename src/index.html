@@ -1,0 +1,17 @@
+---
+layout: default
+regenerate: true
+---
+<div>
+  <h1>Pages</h1>
+
+  <ul class="list-unstyled list-group">
+    {% for page in site.pages %}
+      <li class="list-group-item">
+        <h2>
+          <a class="post-link" href="{{ page.path }}">{{ page.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
