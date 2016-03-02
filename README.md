@@ -1,27 +1,64 @@
-# cm-onehundred
+# Base-Jezkyllized
 
-> ONE Hundred Project
+Based on [*generator-jekyllized*](https://github.com/sondr3/generator-jekyllized).
 
-## To get started
+"Jekyllized is a very opinionated Yeoman generator for very quickly and effortlessly allowing you to build Jekyll based sites with Gulp. Get started using Yo to scaffold your site and start developing. Your assets are automatically updated when developing and injected into your browser with BrowserSync and are also optimized when you're ready to publish."
 
-```sh
-$ gulp [--prod]
-```
+*Note: Please use Stylekyll if your project will focused on creating a Styleguide.
 
-And you'll have a new Jekyll site generated for you and displayed in your
-browser. Neato. If you want to run it with production settings, just add
-`--prod`.
+## Dependencies
 
-## Usage
+In order to work with the template, you will need the following tools:
+- [*Ruby*](https://www.ruby-lang.org/en/).
+- [*Nodejs*](http://nodejs.org/).
+- [*Xcode command line tools *](https://developer.apple.com/xcode/).
 
-```sh
-$ gulp build [--prod]
-```
+## Instructions:
 
-```sh
-$ gulp deploy
-```
+* Download and install [*Xcode command line tools *](https://developer.apple.com/xcode/).
 
-## Github
-For more information on how to use your new project, please refer to the [README
-on Github](https://github.com/sondr3/generator-jekyllized).
+* Download and install [*RVM*](https://rvm.io/rvm/install) (Ruby version Manager is optional)
+
+    Run the following command to install rvm it:
+
+        $ \curl -sSL https://get.rvm.io | bash
+
+* Then update Ruby to the 2.2.3 or higer version (Recommended version: ruby 2.2.3p173)
+
+        $ rvm install 2.2.3
+
+* Choose ^2.2.3 as the default Ruby for RVM
+
+        $ rvm --default use 2.2.3
+
+* Download and install [*Node.JS*](http://nodejs.org/) **v0.12.2**.
+
+* With this done, you have to install the following Gem:
+    
+        gem install bundler
+
+* Then you can run the following command to install ruby dependencies:
+    
+        $ bundle install
+
+* Then you need to install the node dependencies, so run:
+
+        $ npm install -g gulp && npm install -g bower && npm install
+
+* After installing all ruby and nodes dependencies, you should update the front-end dependencies, so run:
+
+        $ bower install
+        
+    ...and you're done. 
+    
+### How to run it
+
+To see your project running please run (For Development):
+
+    $ gulp
+
+To deploy your project please run (For RE Builds):
+
+    $ gulp build --prod
+
+Thanks
