@@ -49,7 +49,12 @@ In order to work with the template, you will need the following tools:
 
         $ bower install
         
-    ...and you're done. 
+    ...and you're almost done. 
+
+* Since we are using a specific version of Gulp, can you make sure you run Gulp as:
+	
+	node_modules/.bin/gulp
+
     
 ### How to run it
 
