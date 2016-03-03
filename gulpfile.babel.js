@@ -283,6 +283,12 @@ gulp.task('wiredep', () =>
     }))
     .pipe(gulp.dest('src/assets/scss')),
 
+  gulp.src('src/_includes/head.html')
+    .pipe(wiredep({
+      ignorePath: /^(\.\.\/)*\.\./
+    }))
+    .pipe(gulp.dest('src/_includes')),
+
   gulp.src('src/_includes/scripts.html')
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)*\.\./
