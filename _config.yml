@@ -41,7 +41,6 @@ highlighter: true
 # Extending Jekyll
 gems:
   - jekyll-archives
-  - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
